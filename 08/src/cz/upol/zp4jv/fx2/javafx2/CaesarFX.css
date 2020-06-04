@@ -1,0 +1,14 @@
+
+
+#boxLbs {
+    -fx-padding: 20px;
+}
+
+#mainGrid {
+    -fx-padding: 20px;
+}
+
+.text-area {
+    -fx-min-height: 50px;
+    -fx-wrap-text: true;
+}

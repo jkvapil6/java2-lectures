@@ -1,0 +1,6 @@
+bob alice hi bob!
+alice bob hello Alice
+alice bob how are you?
+bob admin You will be banned.
+david bob Hello, Dave
+david bob Hello, Dave

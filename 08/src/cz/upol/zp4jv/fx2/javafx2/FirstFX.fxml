@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+
+<HBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="cz.upol.zp4jv.fx2.FirstFX" spacing="10" alignment="CENTER">
+	<Text text="Input:" />
+	<TextField text="Hello!" fx:id="inputField"/>
+	<Button text="Ok" onAction="#submitAction"/>
+</HBox>
+

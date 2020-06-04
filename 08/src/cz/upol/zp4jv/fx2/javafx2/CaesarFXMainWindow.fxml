@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.TextField?>
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="cz.upol.zp4jv.fx2.CaesarFXController">
+	<top>
+		<MenuBar>
+			<Menu text="_File">
+				<MenuItem text="_Encode" onAction="#encodeAction" accelerator="ctrl+e" />
+				<MenuItem text="_Decode" onAction="#decodeAction" accelerator="ctrl+d" />
+				<SeparatorMenuItem />
+				<MenuItem text="E_xit" onAction="#exitAction" accelerator="ctrl+x" />
+			</Menu>
+		</MenuBar>
+	</top>
+	
+	<center>
+		<GridPane fx:id="mainGrid" xmlns:fx="http://javafx.com/fxml/1" alignment="CENTER" hgap="20" vgap="10">
+			<VBox spacing="10" GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.columnSpan="2">
+				<Text text="Shift value: "   />
+				<TextField fx:id="txtShift" />
+			</VBox>
+
+			<VBox spacing="10" GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.columnSpan="2">
+				<Text text="Encode input: "  GridPane.rowIndex="1" GridPane.columnIndex="0" />
+				<TextArea fx:id="taEncode" GridPane.rowIndex="2" GridPane.columnIndex="0"  />
+			</VBox>
+
+			<VBox spacing="10" GridPane.rowIndex="2" GridPane.columnIndex="0" GridPane.columnSpan="2">
+				<Text text="Decode input: "  GridPane.rowIndex="3" GridPane.columnIndex="0" />
+				<TextArea fx:id="taDecode" GridPane.rowIndex="4" GridPane.columnIndex="0" />
+			</VBox>
+
+			<HBox spacing="10" alignment="CENTER" GridPane.rowIndex="3" GridPane.columnIndex="0" GridPane.columnSpan="2">
+				<Button text="encode" onAction="#encodeAction" />
+				<Button text="decode" onAction="#decodeAction" />
+                <Button text="explain" onAction="#explainAction" />
+			</HBox>
+
+		</GridPane>
+	</center>
+	
+</BorderPane>
+
